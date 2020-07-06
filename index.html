@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mandelbrot-wasm</title>
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          background-color: ivory;
+      }
+
+      #canvas {
+        top:0;bottom:0;right:0;left:0;
+        margin:auto;
+        width: 80%;
+        height: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+    <script src="./bootstrap.js"></script>
+    <h1 style="text-align: center;">Mandelbrot Set</h1>
+    <p style="text-align: center;">This image is entirely created browser side, using WebAssembly that was compiled from Rust.</p>
+    <div style="text-align: center">
+      <a href="https://github.com/mellena1/mandelbrot-wasm">https://github.com/mellena1/mandelbrot-wasm</a>
+      <br/>
+      <a href="https://github.com/mellena1/mandelbrot-wasm-ui">https://github.com/mellena1/mandelbrot-wasm-ui</a>
+      <br/>
+      <canvas id="canvas" height="1200" width="1600"></canvas>
+    </div>
+  </body>
+</html>
